@@ -1,0 +1,30 @@
+$btn1: #15b6c6;
+$strong : rgb(66, 66, 66);
+$mid: rgb(122, 122, 122);
+$light:rgb(255, 255, 255);
+$bg1:rgb(250, 236, 236);
+#new-rev{
+    .make-rev{
+        background-color: $bg1;
+        color:$mid!important;
+        margin:1rem;
+        border-radius:10px;
+        select{
+            margin:1rem;
+            border:1px solid $light;
+            color:$mid;
+            display: inline-block;
+            cursor: pointer;
+        } 
+        #show-mail{
+            margin:1rem;
+        }
+        .submit-btn{
+            background-color:$btn1;
+            color:$light;
+            margin-bottom: .5rem;
+        }
+       
+        
+    }
+}

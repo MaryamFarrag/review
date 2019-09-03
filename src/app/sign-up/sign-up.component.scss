@@ -1,0 +1,22 @@
+$strong : rgb(66, 66, 66);
+$mid: rgb(122, 122, 122);
+$light:rgb(255, 255, 255);
+$btn1: #15b6c6;
+h1{
+    color:$strong;
+    font-size:34px;
+}
+.form{
+    font-size:20px;
+}
+label{
+    color:$mid;
+}
+.my-btn{
+    background-color:$btn1;
+    color:$light;
+}
+.sign-in-btn{
+    border:1px $btn1 solid;
+    color:$mid;
+}

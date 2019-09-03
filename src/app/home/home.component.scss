@@ -1,0 +1,47 @@
+$strong : rgb(66, 66, 66);
+$mid: rgb(122, 122, 122);
+$light:rgb(255, 255, 255);
+$btn1: #15b6c6;
+$bg1:rgb(226, 84, 84);
+$bg2:#15b7c6f5;
+#home{
+    padding:1px;
+    padding-bottom:1rem;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url("../../assets/images/bg-1.jpg");
+    background-size:cover; 
+    h1{
+        color:$light;
+        margin-top:2rem;
+        text-shadow: 5px 5px 5px black;
+    }
+    .prompt-user{
+        background-color:$bg1; 
+        color:$light;
+        padding:2rem;
+        margin-left:.5rem;
+        position: relative;
+        h2{
+            font-size:1.8rem;
+        }
+        a{
+            color:#6ef3ff;
+            text-decoration: none;
+        }
+        fa-icon{
+            position: absolute;
+            top:1rem;
+            right:1rem;
+            cursor: pointer;
+        }
+    }
+    .search-btn{
+        background-color: $bg1;
+        color:$light;
+    }
+    .category{
+        background-color: $bg2;
+        color:$light;
+        padding:1rem;
+        border-radius:10px;
+    }
+}

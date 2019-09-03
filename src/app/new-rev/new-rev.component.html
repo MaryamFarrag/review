@@ -1,0 +1,67 @@
+<section id="new-rev">
+    <div class="container">
+        <div class="make-rev text-center">
+            <form enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>Choose a category</label>
+                    <select id="category">
+                        <optgroup label="Place">
+                            <option>Resturant</option>
+                            <option>Vacation</option>
+                            <option>Store</option>
+                        </optgroup>
+                        <optgroup label="Media">
+                            <option>Music</option>
+                            <option>Shows</option>
+                            <option>Movies</option>
+                            <option>Sites</option>
+                        </optgroup>
+                        <optgroup label="Other">
+                            <option>Books</option>
+                            <option>Articles</option>
+                            <option>others</option>
+                        </optgroup>
+                    </select>  
+                </div> 
+                <div class="form-group">
+                    <label class="thing-name">Name the thing:</label>  
+                    <input id="thing-name" name="name" class="fill form-control w-50 mx-auto">              
+                </div>
+                <div class="form-group">
+                    <label class="country">Country:</label>  
+                    <input id="country" name="country" class="fill form-control w-50 mx-auto">              
+                </div> 
+                <div class="form-group">
+                    <label class="address">Address:</label>  
+                    <input id="tAddress" name="address" class="fill form-control w-50 mx-auto">              
+                </div> 
+                <div class="form-group">
+                    <label class="link">Link:</label>  
+                    <input id="tLink" name="link" class="fill form-control w-50 mx-auto">              
+                </div>  
+                <div class="form-group">
+                    <label class="description">Description:</label>  
+                    <textarea id="tDesc" name="desc" class="fill form-control w-50 mx-auto"></textarea>           
+                </div>  
+
+                <div class="form-group">
+                    <label class="up-img mr-3">Upload an image: </label>
+                    <input type="file" accept="image/*" name="avatar" id="file" (change)="onFileSelect($event)" class="upload">
+                </div>  
+
+                <div class="form-group">
+                    <label class="user-name">User Name:<span id="userName"> {{userName}}</span></label>                
+                </div>             
+                <div class="form-group">
+                    <label class="user-mail">User Mail:<span id="userMail">  {{userMail}}</span></label>
+                    <input id="userMailCheck" type="checkbox" id="show-mail" name="show" value="showMail" checked>
+                </div>
+                <div class="form-group">
+                    <label class="review">Personal review:</label>  
+                    <textarea id="personal-rev" name="review" class="fill form-control w-50 mx-auto"></textarea>           
+                </div>  
+                <button class="btn submit-btn" (click)="makeReview()">Review</button>
+            </form>
+        </div>
+    </div>
+</section>

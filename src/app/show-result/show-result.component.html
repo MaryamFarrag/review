@@ -1,0 +1,32 @@
+<section id="show-result">
+        <div class="container mt-3">
+            <h1 class="text-center mb-2">Result for {{title}}</h1>
+            <div class="rev mb-3 p-3" *ngFor="let r of data">
+                <div class="row">
+                    <div class="col-md-4 border-right">
+                        <img class="img-fluid" [src]=r.tImg>
+                        <span class="name">By:{{r.userName}}</span>
+                        <div class="likes-and-dislikes float-right">
+                            <fa-icon class="likes" [icon]="faThumbsUp"></fa-icon><span> +{{r.likes}} </span>
+                            <fa-icon class="dislikes" [icon]="faThumbsDown"></fa-icon><span> -{{r.dislikes}}</span>
+                        </div>
+                        <div class="clearfix"></div>
+                        <span class="mail">{{r.userMail}}</span>
+                    </div>
+                    <div class="col-md-8">
+                        <h2 class="float-left">{{r.tName}}</h2>
+                        <span class="category">{{r.category}}</span>
+                        <div class="clearfix"></div>
+                        <span class="country ml-5 float-right">{{r.country}}</span>
+                        <p class="desc">Description{{r.tDesc | slice:0:80}}..</p>
+                        <div class="clearfix"></div>
+                        <label>Review:</label>
+                        <p class="per-rev">{{r.personalRev | slice:0:130}}</p>
+                        <p class="address">Address{{r.tAddress}}</p>
+                        <a href="{{r.tLink}}" class="link">Link to it</a>
+                        <button class="btn check float-right" (click)="check(r.id)">Check it</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

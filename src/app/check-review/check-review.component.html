@@ -1,0 +1,26 @@
+<section id="check-review">
+    <div class="container text-center">
+        <div class="review" *ngFor="let r of review">
+            <span class="category">{{r.category}}<hr>{{r.country}}</span>
+            <div class="like">
+                <fa-icon (click)="like()" class="likes" [icon]="faThumbsUp"></fa-icon><span> +{{r.likes}} </span><hr>
+                <fa-icon (click)="disLike()" class="dislikes" [icon]="faThumbsDown"></fa-icon><span> -{{r.dislikes}}</span>
+            </div>
+            <img class="img-fluid w-50" [src]=r.tImg>
+            <div class="container">
+                <strong *ngIf="show_del_btn" class="mt-4" id="delete" (click)="delete()">Delete</strong>
+                <h1 class="mt-2 name">{{r.tName}}</h1>
+                <p class="desc">{{r.tDesc}}:</p>
+                <p class="address">{{r.tAddress}}</p>
+                <a href="{{r.tLink}}" class="link">Check here</a>
+                <hr class="w-50 m-auto pb-3">
+                <label>Review:</label>
+                <p class="personal-rev">{{r.personalRev}}</p>
+                <span class="float-left user-name">By: {{r.userName}}</span>
+                <div class="clearfix"></div>
+                <span class="float-left user-mail">{{r.userMail}}</span>
+            </div>
+            
+        </div>    
+    </div>
+</section>

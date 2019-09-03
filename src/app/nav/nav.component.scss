@@ -1,0 +1,24 @@
+$btn1: #15b6c6;
+$strong : rgb(66, 66, 66);
+$mid: rgb(122, 122, 122);
+$light:rgb(255, 255, 255);
+$bg1:rgb(226, 84, 84);
+
+.sign-in{
+    background-color:$btn1;
+    color:$light!important;
+    border-radius:10px; 
+}
+nav{
+    padding:1rem;
+    .navbar-brand{
+        font-size:2rem;
+        font-weight:700;
+    }
+    a:hover{
+        color:$bg1!important;
+    }
+    .sign-in:hover{
+        color:$light!important;
+    }
+}

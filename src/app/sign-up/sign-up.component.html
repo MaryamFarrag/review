@@ -1,0 +1,24 @@
+<h1 class="text-center mt-2">Sign Up</h1>
+<div class="container">
+    <div class="form">    
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" id="name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Mail</label>
+            <input type="text" name="mail" id="mail" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="password" id="password" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Password Again</label>
+            <input type="password" class="form-control">
+        </div>
+        <button class="btn my-btn float-right" (click)="create()">Sign Up</button>
+        <a><button class="btn sign-in-btn float-right mr-3" routerLink="/sign-in">Sign In</button></a>
+    </div>
+
+</div>

@@ -1,0 +1,57 @@
+$strong : rgb(66, 66, 66);
+$mid: rgb(122, 122, 122);
+$light:rgb(255, 255, 255);
+$btn1: #15b6c6;
+$bg1:rgb(226, 84, 84);
+$bg2:#15b7c6f5;
+
+#show-result{
+    h1{
+        text-shadow: 3px 3px 3px rgb(207, 207, 207);
+    }
+    .rev{
+        background-color:#15b7c61a;
+        border-radius: 10px;
+        position: relative;
+        img{
+            border-radius:5px;
+        } 
+        .likes-and-dislikes{
+            margin-top:.2rem;
+            color:$mid;
+        }
+        h2{
+            font-size:1.5rem;
+            font-weight:600;
+        }
+        p{
+            color:$mid;
+            word-wrap: break-word!important;
+            display: block;
+        }
+        .country{
+            color:$mid;
+        }
+        a.link{
+            color:$bg1;
+            text-decoration: none;
+        }
+        .category{
+            padding:0 1rem;
+            position: absolute;
+            color:$light;
+            background-color: $bg1;
+            right:0;
+            border-bottom-left-radius: 10px;
+        }
+        .check{
+            background-color: $btn1;
+            color:$light;
+        }
+        .name,.mail{
+            color:$mid;
+            font-size:.8rem;
+        }
+    }
+    
+}

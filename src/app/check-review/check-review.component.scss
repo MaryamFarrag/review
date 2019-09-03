@@ -1,0 +1,73 @@
+$strong : rgb(66, 66, 66);
+$mid: rgb(122, 122, 122);
+$light:rgb(255, 255, 255);
+$btn1: #15b6c6;
+$bg1:rgb(226, 84, 84);
+$bg2:#15b7c6f5;
+
+#check-review{
+    .review{
+        margin-top:1rem;
+        border-radius:10px;
+        padding:1.5rem;
+        background-color: #a7a8a82c;
+        position: relative;
+        img{
+            border-radius: 10px;
+            
+        }
+        h1{
+            padding-top:1rem;
+            border-top: 1px solid rgba(226,84,84,.4);   
+            color:$strong;
+        }
+        .desc,.personal-rev{
+            color:$mid;
+        }
+        .category{
+            position: absolute;
+            padding:1rem;
+            border-bottom-left-radius: 10px;
+            top:0;
+            right:0;
+            background-color:$bg2;
+            color:$light;
+            font-size: .8rem;
+        }
+        .like{
+            position: absolute;
+            padding:1rem;
+            border-bottom-right-radius: 10px;
+            top:0;
+            left:0;
+            background-color: $bg2;
+            color:$light;
+            font-size: .8rem;
+        }
+        fa-icon{
+            cursor: pointer;
+        }
+        hr{
+            margin:0;
+        }
+        .link{
+            color:$bg1;
+            text-decoration:none;
+        }
+        .link:hover{
+            color:$bg2;
+        }
+        label{
+            margin-bottom:0;
+        }
+        .user-name,.user-mail{
+            color:$mid;
+            font-size: 0.8rem;
+        }
+        #delete{
+            float:right;
+            color:$bg1;
+            cursor: pointer;
+        }
+    }
+}
