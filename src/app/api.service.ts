@@ -9,7 +9,7 @@ import {Review} from './review';
   providedIn: 'root'
 })
 export class ApiService {
-  PHP_API_SERVER = "http://127.0.0.1:8080";
+  PHP_API_SERVER = "https://reviewsbackend.000webhostapp.com";
 
   readUsers(): Observable<User[]>{
     return this.httpClient.get<User[]>(`${this.PHP_API_SERVER}/api/read.php`);
